@@ -22,7 +22,11 @@ Alter multiple priorities at once: `renice <priority> <PID> -u <username> -p <an
 #####System Reporting
 
 To display details about IO activities, type: `iostat`
+
 To show network card activities, type: `netstat -i`
+
 To display socket activities, type: `netstat -a`
+
 To get details about virtual memory activities (memory, swap, run queue, cpu usage, etc) every 5 second, type: `vmstat 5`
+
 To get a full report of a server activity, type: `sar -A`
