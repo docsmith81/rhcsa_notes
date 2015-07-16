@@ -1,7 +1,8 @@
 ## Configure key-based authentication for SSH
 ---
-#### Public-key Authentication:
-##### Step One
+#### Client-Side Configuration
+##### Public-key Authentication:
+###### Step One
 - To generate DSA keys, on the command line, enter:
   `ssh-keygen -t dsa``
 - To generate RSA keys, on the command line, enter:
@@ -32,7 +33,7 @@ The key's randomart image is:
 +-----------------+
 ```
 
-##### Step Two
+###### Step Two
 Copy Public Key to host(s): `ssh-copy-id -i ~/.ssh/id_rsa.pub user@<IP_address or Hostname>`
 
 #### Server-Side Configuration
