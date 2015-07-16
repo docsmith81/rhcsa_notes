@@ -46,10 +46,10 @@ tar -xvzf archive.tgz -C /path/to/where/you/want/the/files/
 To archive a directory with the star command with the SELinux contexts, type:
 ```
 yum install -y star
-star -xattr -H=exustar -c -f=directory.star directory
+star -xattr -H=exustar -c -f=archive.star directory/
 ```
 
 To unpack a archive file, type:
 ```
-star -x -f=directory.star
+star -x -f=archive.star
 ```
