@@ -39,6 +39,17 @@ tar --selinux -cvjf archive.bz2 directory/
 To uncompress and unarchive a tgz file, type:
 ```
 tar -xvzf archive.tgz
-or
 tar -xvzf archive.tgz -C /path/to/where/you/want/the/files/
+```
+
+##### Star
+To archive a directory with the star command with the SELinux contexts, type:
+```
+yum install -y star
+star -xattr -H=exustar -c -f=directory.star directory
+```
+
+To unpack a archive file, type:
+```
+star -x -f=directory.star
 ```
