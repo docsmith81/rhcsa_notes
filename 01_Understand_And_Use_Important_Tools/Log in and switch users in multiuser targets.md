@@ -1,8 +1,7 @@
-Log in and switch users in multiuser targets
-
+### Log in and switch users in multiuser targets
+---
 Switch user:
-# su - <username>
+`su - <username>`
 
-Switch to root
-
-# su -
+Switch to root:
+`su -`
