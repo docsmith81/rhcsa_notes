@@ -1,11 +1,23 @@
-Boot, reboot, and shut down a system normally
-
+### Boot, reboot, and shut down a system normally
+---
 Reboot system:
-# reboot
-# shutdown -r now
-# init 6
+```
+reboot
+shutdown -r now
+init 6
+systemctl reboot
+```
 
 Shutdown system:
-# shutdown -h now
+```
+halt
+shutdown -h now
+init 0
+systemctl halt
+```
 
-# init 0
+Or:
+```
+poweroff
+systemctl poweroff
+```
