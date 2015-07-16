@@ -3,15 +3,15 @@
 
 ##### ugo
 What is meant by 'ugo'?
-u = User Permissions. This is the user that owns the file.
-g = Group Permissions. This is the group that owns the file.
-o = Others Permissions. This specifies the permissions for all others.
+* u = User Permissions. This is the user that owns the file.
+* g = Group Permissions. This is the group that owns the file.
+* o = Others Permissions. This specifies the permissions for all others.
 
 ##### rwx
 What is meant by 'rwx'?
-r = Read Permissions.
-w = Write Permissions.
-x = Execute Permissions.
+* r = Read Permissions
+* w = Write Permissions
+* x = Execute Permissions
 
 List permissions:
 ```
