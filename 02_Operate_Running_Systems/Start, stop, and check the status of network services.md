@@ -1,26 +1,19 @@
-Start, stop, and check the status of network services
+### Start, stop, and check the status of network services
+---
+`systemctl start httpd`: Start apache web server
 
-Start service:
-# service httpd start
+`systemctl restart httpd`: Restart process
 
-Restart process:
-# service httpd restart
+`systemctl reload httpd`: Reload config for process
 
-Reload process configuration:
-# service httpd reload
+`systemctl stop httpd`: Stop process
 
-Stop service:
-# service httpd stop
+`systemctl is-active httpd`: Check if process is running
 
-Check status of service:
-# service httpd status
+`systemctl enable httpd`: Start process on boot
 
-Configure service to start on boot:
-# chkconfig httpd on
+`systemctl is-enabled httpd`: Check if process starts at boot
 
-Specify levels at which the service will start up in at boot:
-# chkconfig --levels 345 httpd on
+`systemctl status httpd`: Check status of process
 
-Stop service from starting on boot:
-
-# chkconfig httpd off
+`systemctl mask httpd`: Permanently disable process
