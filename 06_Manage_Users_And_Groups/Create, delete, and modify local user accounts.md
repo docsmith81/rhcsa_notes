@@ -1,29 +1,35 @@
-Create, delete, and modify local user accounts
+### Create, delete, and modify local user accounts
+---
 
-Create users with GUI:
-# system-config-users
+`/etc/default/useradd`: File contains useradd default parameters (also viewable using `useradd -D`)
 
-Add user:
-# useradd joe
+`/etc/skel`: Directory contains default files added to new user accounts upon creation
 
-Add user to group:
-# useradd -G group1 joe
+`/etc/login.defs`: File containts default parameters for other user and group management tools
 
-Add sh to user account:
-# useradd -s /bin/sh joe
+##### User Management
+`useradd joe`: Add user joe
 
-Set UID and GID for user:
-# useradd -u 504 -g  505 joe
+`useradd -G group1 joe`: Add user joe to group1
 
-Add additional group to user:
-# useradd -a -G group2 joe
+`useradd -s /bin/sh joe`: Add sh to user joe
 
-Change user password:
-# passwd joe
+`useradd -u 504 -g  505 joe`: Set UID and GID for user joe
 
-Delete user:
-# userdel joe
+`useradd -a -G group2 joe`: Add additional group to user joe
 
-Force delete user (even if he/she is logged in):
+`passwd joe`: Change user joe's password
 
-# userdel -f joe
+`userdel joe`: Delete user joe
+
+`userdel -f joe`: Force delete user joe (even if he/she is logged in)
+
+##### Preventing User Creation/Modification Issues
+`pwck`: Checks `/etc/passwd` for corruption and irregularities 
+
+`vipw`: Customer verision of `vi` used to edit `/etc/passwd` which disables write access when in use
+
+##### Shadowing
+`pwconv`: Creates and updates the `/etc/shadow` file and moves user passwords over from the `/etc/passwd` file
+
+`pwunconv`: Moves `/etc/shadow` passwords back to the `/etc/passwd` file

@@ -1,14 +1,11 @@
-Change passwords and adjust password aging for local user accounts
+### Change passwords and adjust password aging for local user accounts
+---
+`passwd <user>`: Change password for user
 
-Display password aging information on user:
-# chage --list <username>
+`chage --list <username>`: Display password aging information on user
 
-Change password after maximum amount of days:
-# chage -M 120 <username>
+`chage -M 120 <username>`: Change password after maximum amount of days
 
-Change password every X amount of days:
-# chage -m 120 <username>
+`chage -m 120 <username>`: Change password every X amount of days
 
-Force user to change password on next login:
-
-# chage -m 0 <username>
+`chage -m 0 <username>`: Force user to change password on next login
