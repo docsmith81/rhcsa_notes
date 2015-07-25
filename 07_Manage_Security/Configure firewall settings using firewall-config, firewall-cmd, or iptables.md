@@ -4,6 +4,7 @@
 Keep in mind that Firewalld and IPtables cannot be used at the same time.  Pick one and go with it!
 
 #### Firewalld
+---
 ##### Configuration Files
 `/etc/firewalld`: Directory containing firewalld configuration files
 
@@ -42,4 +43,5 @@ Keep in mind that commands that change rules and zones through the command line 
 ##### Service Management
 
 #### IPtables
+---
 `/etc/sysconfig/iptables`: IPtables configuration file
