@@ -3,14 +3,13 @@
 
 Keep in mind that Firewalld and IPtables cannot be used at the same time.  Pick one and go with it!
 
-##### Firewalld
-____
-###### Configuration Files
+#### Firewalld
+##### Configuration Files
 `/etc/firewalld`: Directory containing firewalld configuration files
 
 `/usr/lib/firewalld`: Contains service and zone templates
 
-###### General Commands
+##### General Commands
 Keep in mind that commands that change rules and zones through the command line are temporary unless `--permanent` is used
 
 `systemctl status firewalld`: Displays firewalld status
@@ -31,14 +30,16 @@ Keep in mind that commands that change rules and zones through the command line 
 
 `firewall-cmd --reload`: Reload firewall rules
 
-###### Source Management
+##### Source Management
 `firewall-cmd --permanent --zone=trusted --add-source=192.168.2.0/24`: Add source IP(s) to zone
+
 `firewall-cmd --permanent --zone=trusted --remove-source=192.168.2.0/24`: Remove source IP(s) to zone
+
 `firewall-cmd --permanent --zone=work --change-source=192.168.2.0/24`: Change source IP(s) to different zone
 
 `firewall-cmd --zone=trusted --list-sources`: List source IP(s) for a given zone
 
-###### Service Management
+##### Service Management
 
-##### IPtables
+#### IPtables
 `/etc/sysconfig/iptables`: IPtables configuration file
