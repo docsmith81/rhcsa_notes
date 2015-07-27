@@ -1,11 +1,8 @@
-Set enforcing and permissive modes for SELinux
+### Set enforcing and permissive modes for SELinux
+---
 
-Use setenforce to set the current running mode:
-# setenforce permissive
-# setenforce enforcing
+`setenforce <option>` Set the current SELinux running mode to either Enforcing or Permissive
 
-Use getenforce to check current mode:
-# getenforce
+`getenforce`: check current mode:
 
-
-Edit /etc/selinux/config to configure default mode on startup
+Edit `/etc/selinux/config` to configure default mode on startup

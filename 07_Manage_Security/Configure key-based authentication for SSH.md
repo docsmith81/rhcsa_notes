@@ -1,4 +1,4 @@
-## Configure key-based authentication for SSH
+### Configure key-based authentication for SSH
 ---
 #### Client-Side Configuration
 ##### Public-key Authentication:

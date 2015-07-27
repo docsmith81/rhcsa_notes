@@ -1,8 +1,6 @@
-List and identify SELinux file and process context
+### List and identify SELinux file and process context
+---
 
-List file contexts:
-# ls -lZ
+`ls -lZ`: List file contexts
 
-List process contexts:
-
-# ps -eZ
+`ps -eZ`: List process contexts

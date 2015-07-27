@@ -1,8 +1,6 @@
-Restore default file contexts
+### Restore default file contexts
+---
 
-Restore  default file contexts:
-# restorecon -F <dir>
+`restorecon -F <dir>`: Restore  default file contexts:
 
-Restore default file contexts recursively
-
-# restorecon -F -R <dir>
+`restorecon -F -R <dir>`: Restore default file contexts recursively
